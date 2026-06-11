@@ -386,6 +386,8 @@ async function syncNow(){
     setSS('err');
   }
   renAll();
+  // Re-initialize saida form if on that page so dropdown populates after sync
+  if(cp==='sai') initSai();
 }
 
 async function saveAll_(){
